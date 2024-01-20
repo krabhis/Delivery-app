@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* css variables
+:root{
+    --navbar-height:59;
+}*/
+#navbar{
+    display:flex;
+    align-items:center;
+    position: relative;
+}
+/*logo and image*/
+/*navigation:logo and image*/
+#logo{
+     margin:10px 33px;
+
+}
+#logo img{
+    height:50px;
+    margin:3px 5px;
+}
+/*navigation bar:list styling*/
+
+
+ #navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height:50px;
+    width:1200px;
+    top:0%;
+    left: 0%;
+    z-index: -1; /*content like icon,logo ko upper lane ke liye*/ 
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    display: block;
+    padding:3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+}
+#navbar ul li a:hover{
+   color:black;
+   background-color: aliceblue;
+
+
+}
+/*home section*/
+#home{
+    display:flex;
+    flex-direction:column;
+    height: 380px;
+    padding:20px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background:url('https://wallpaperaccess.com/full/271679.jpg') no-repeat center center/cover;
+  
+    height: 480px;
+    width:1300px;
+    top:0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+font-family: 'Delicious Handrawn', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif;
+}
+#home p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+font-family: 'Delicious Handrawn', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif;
+
+}
+/*SERVICES*/
+#services{
+    margin: 14px;
+    display: flex;
+    
+}
+#services  .box{
+    border:2px solid brown;
+    padding:12px;
+    margin:3px 6px;
+    border-radius: 28px;
+    background: rgb(230, 232, 236);
+}
+#services .box img{
+    height:180px;
+    margin:auto;              /*margin auto here working only with the display:block*/
+    display:block;
+
+}
+#services .box p{
+    font-family: serif;
+} 
+
+
+/*CLIENTS SECTION*/
+#client-section{
+    height: 310px;
+    position: relative;
+
+}
+#client-section::before{
+    content: " ";
+    position: absolute;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9U1bNXyuRPIriv6Sbkk71Jtd0_sfYE338Vw&usqp=CAU')no-repeat center center/cover;
+    ;
+    width: 1300px;
+    height:309px;
+    z-index:-1;
+    opacity:0.8;
+
+}
+#clients img {
+   height: 90px;
+   width:90px;
+}
+
+
+#clients {
+      display: flex;
+      justify-content: center;
+       align-items: center;
+
+}
+.client-item{
+    padding: 13px;
+}
+
+/*CONTACT SECTION*/
+#contact{
+    position:relative;
+
+}
+
+#contact ::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+    background: url('./apple p16.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 34px;
+}
+
+#contact-box form{
+    width:40% px;
+}
+
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: monospace;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width:340px;
+    padding:0.8rem;
+    border-radius: 9px;
+    font-size: 1.5rem;
+}
+
+
+/*UTILITY CLASSES*/
+.h-primary{
+    font-size:3.5rem;
+    padding:10px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+font-family: 'Delicious Handrawn', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif;
+
+}
+.h-secondary{
+    font-size:2.3rem;
+    padding:10px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+font-family: 'Delicious Handrawn', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:brown ;
+    color:beige;
+    margin:17px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.center{
+    text-align:center;
+}
+footer{
+    background: black;
+    color:white;
+    padding:9px 20px;
+}
